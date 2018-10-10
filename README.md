@@ -47,8 +47,9 @@ There is a minimum version of the graphics driver required when installing CUDA.
 |CUDA 7.5|352.xx|
 |CUDA 7.0|346.xx|
 
-Check the nvidia-smi command for the currently installed graphics driver.
+Check the nvidia-smi command for the currently installed graphics driver.<br>
 
-'''
+
+'''bash
 $ nvidia-smi
 '''
