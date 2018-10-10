@@ -8,7 +8,7 @@ After following these instructions you'll have:
 
 ---
 
-__Sewoony's Install Env__
+# # __Sewoony's Install Env__
 
 | OS | GPU | PYTHON |
 |:---:|:---:|:---:|
@@ -16,7 +16,7 @@ __Sewoony's Install Env__
 
 ---
 
-# __CUDA & cuDNN__<br>
+# # __CUDA & cuDNN__<br>
 There are two different versions of Tensorflow : CPU / GPU<br>
 To use the Tensorflow-gpu version you need to install CUDA and cuDNN.<br>
 There is a different version to install for each TF version.<br>
