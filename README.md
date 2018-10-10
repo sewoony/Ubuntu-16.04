@@ -63,6 +63,21 @@ Therefore, it is safe to delete and install existing drivers.<br>
 $ sudo apt-get purge nvidia-*
 ```
 
-If you install CUDA with a driver already installed, you can downgrade if your graphics driver is up to date.<br>
+If you install CUDA with a driver already installed, you can downgrade if your graphics driver is up to date.<br><br><br>
 
 [CUDA DOWNLOAD LINK](https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=deblocal)
+
+As of today, there are one base download and four patches.
+
+__First, install CUDA base version__
+
+```bash
+$ cd Downloads , 다운로드
+$ sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb
+$ sudo apt-key add /var/cuda-repo-9-0-local/7fa2af80.pub
+$ sudo apt-get update
+$ sudo apt-get install cuda
+$ sudo reboot
+```
+After rebooting, you will see the nvidia-smi command install the 384 version of the driver.
+![nvidia-smi](https://user-images.githubusercontent.com/43063889/46713909-d7f1b180-cc93-11e8-8ffc-b675a83de3c3.png)
