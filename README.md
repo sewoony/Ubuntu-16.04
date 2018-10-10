@@ -130,7 +130,7 @@ $ nvcc --version
 
 ![nvcc --version](https://user-images.githubusercontent.com/43063889/46714610-52700080-cc97-11e8-99df-b2c2a7fa24fc.png)
 
-
+---
 
 
 ## Install cuDNN 7.5.0<br>
@@ -176,7 +176,7 @@ $ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 ```
 ![2018-10-10 15-05-53](https://user-images.githubusercontent.com/43063889/46716198-02486c80-cc9e-11e8-81cc-4b262e1e3c13.png)
 
-
+---
 
 
 ## Install Tensorflow-GPU 1.8.0<br>
@@ -185,6 +185,6 @@ $ pip3 install tensorflow-gpu==1.8.0
 $ pip list
 ```
 
-Check pip3 list or Run Tensorflow
+Check pip3 list or Run Tensorflow<br>
 ![2018-10-10 15-11-35](https://user-images.githubusercontent.com/43063889/46716415-df6a8800-cc9e-11e8-9d15-1a668c28ee39.png)
 ![2018-10-10 15-12-05](https://user-images.githubusercontent.com/43063889/46716416-e1344b80-cc9e-11e8-96d6-86a582403c0f.png)
