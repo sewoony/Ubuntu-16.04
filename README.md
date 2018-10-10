@@ -1,4 +1,4 @@
-# install_ubuntu-16.04_tensorflow-gpu
+# install_ubuntu-16.04_tensorflow-GPU
 These instructions are intended to set up a deep learning environment for GPU-powered tensorflow.
 
 After following these instructions you'll have:
