@@ -69,7 +69,7 @@ If you install CUDA with a driver already installed, you can downgrade if your g
 
 As of today, there are one base download and four patches.
 
-__First, install CUDA base version__
+__First, Install CUDA base version__
 
 ```bash
 $ cd Downloads , 다운로드
@@ -104,12 +104,12 @@ $ sudo dpkg -i cuda-repo-ubuntu1604-9-0-176-local-patch-4_1.0-1_amd64.deb
 $ sudo apt-get update 
 $ sudo apt-get upgrade cuda
 ```
-__Third, add your PATH setting to .bashrc__
+__Third, Add your PATH setting to .bashrc__
 
 ```bash
 $ sudo nano ~/.bashrc
 # enters a text editing program.
-$ export PATH=/usr/local/cuda-9.0/bin:$PATH
+export PATH=/usr/local/cuda-9.0/bin:$PATH
 # add this code
 ```
 
@@ -124,5 +124,45 @@ $ nvcc --version
 
 ![nvcc --version](https://user-images.githubusercontent.com/43063889/46714610-52700080-cc97-11e8-99df-b2c2a7fa24fc.png)
 
+## Install cuDNN 7.5.0<br>
+[cuDNN DOWNLOAD LINK](https://developer.nvidia.com/rdp/cudnn-archive)<br>
+click cuDNN DOWNLOAD LINK & sign up<br><br>
 
-$ nvcc --version
+- click Download cuDNN
+![nvidia](https://user-images.githubusercontent.com/43063889/46715583-9fee6c80-cc9b-11e8-933f-98d8129777bd.png)<br><br>
+
+- check 'I Agree ~ '
+- click Archived cuDNN Releases
+![cudnn](https://user-images.githubusercontent.com/43063889/46715771-610ce680-cc9c-11e8-8338-47a8e3003ca2.png)<br><br>
+
+- click Download cuDNN v7.0.5 (Dec5, 2017), for CUDA 9.0
+- click cuDNN v7.0.5 Library for Linux
+![7 0 5](https://user-images.githubusercontent.com/43063889/46715802-813ca580-cc9c-11e8-9a56-8674dafd3aec.png)<br><br>
+
+__Fitst, Unzip the file__
+```bash
+$ cd Downloads , 다운로드
+$ tar xvzf cudnn-9.0-linux-x64-v7.tgz
+# When the process is finished, a folder named cuda is created in the Downloads folder.
+$ sudo cp -P cuda/include/cudnn.h /usr/local/cuda/include
+$ sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64
+$ sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
+```
+
+__Second, Add your PATH setting to .bashrc__
+```bash
+$ sudo nano ~/.bashrc
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH
+# add this code
+```
+
+![2018-10-10 15-01-20](https://user-images.githubusercontent.com/43063889/46716040-6454a200-cc9d-11e8-9898-94bf7201452c.png)
+
+__Third, Checking install complete__
+
+```bash
+$ source ~/.bashrc
+$ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+# check install complete
+```
+![2018-10-10 15-05-53](https://user-images.githubusercontent.com/43063889/46716198-02486c80-cc9e-11e8-81cc-4b262e1e3c13.png)
