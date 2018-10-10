@@ -12,7 +12,7 @@ After following these instructions you'll have:
 
 | OS | GPU | PYTHON |
 |:---:|:---:|:---:|
-| Ubuntu 16.04 | NVIDIA GIX 1080 | 3.5 |
+| Ubuntu 16.04 | NVIDIA GTX 1080 | 3.5 |
 
 ---
 
