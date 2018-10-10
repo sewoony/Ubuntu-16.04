@@ -74,6 +74,7 @@ __First, install CUDA base version__
 ```bash
 $ cd Downloads , 다운로드
 $ sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb
+# The apt-key part is copied and executed after the above code execution.
 $ sudo apt-key add /var/cuda-repo-9-0-local/7fa2af80.pub
 $ sudo apt-get update
 $ sudo apt-get install cuda
@@ -81,3 +82,25 @@ $ sudo reboot
 ```
 After rebooting, you will see the nvidia-smi command install the 384 version of the driver.
 ![nvidia-smi](https://user-images.githubusercontent.com/43063889/46713909-d7f1b180-cc93-11e8-8ffc-b675a83de3c3.png)
+
+__Second, Install CUDA patch files__
+
+```bash
+$ cd Downloads , 다운로드
+# Patch 1
+$ sudo dpkg -i cuda-repo-ubuntu1604-9-0-local-cublas-performance-update_1.0-1_amd64.deb
+$ sudo apt-get update 
+$ sudo apt-get upgrade cuda
+# Patch 2
+$ sudo dpkg -i cuda-repo-ubuntu1604-9-0-local-cublas-performance-update-2_1.0-1_amd64.deb
+$ sudo apt-get update 
+$ sudo apt-get upgrade cuda
+# Patch 3
+$ sudo dpkg -i cuda-repo-ubuntu1604-9-0-local-cublas-performance-update-3_1.0-1_amd64.deb
+$ sudo apt-get update 
+$ sudo apt-get upgrade cuda
+# Patch 4
+$ sudo dpkg -i cuda-repo-ubuntu1604-9-0-176-local-patch-4_1.0-1_amd64.deb
+$ sudo apt-get update 
+$ sudo apt-get upgrade cuda
+```
