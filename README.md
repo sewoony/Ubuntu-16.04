@@ -26,3 +26,6 @@ Starting with version 1.5, CUDA 9 and cuDNN 7 are required.
 |~|9|7|
 |TF 1.5|9|7|
 |TF 1.4|8|6|
+
+Also, the version of CUDA and cuDNN that can be installed for each graphics card may be different. <br>
+You should check your graphic card and check the version of TF that matches your graphics card.
