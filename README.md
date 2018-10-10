@@ -49,6 +49,6 @@ There is a minimum version of the graphics driver required when installing CUDA.
 
 Check the nvidia-smi command for the currently installed graphics driver.
 
-'''bash
+'''
 $ nvidia-smi
 '''
