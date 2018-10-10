@@ -182,7 +182,7 @@ $ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 ## Install Tensorflow-GPU 1.8.0<br>
 ```bash
 $ pip3 install tensorflow-gpu==1.8.0
-$ pip list
+$ pip3 list
 ```
 
 Check pip3 list or Run Tensorflow<br>
