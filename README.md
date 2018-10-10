@@ -48,8 +48,21 @@ There is a minimum version of the graphics driver required when installing CUDA.
 |CUDA 7.0|346.xx|
 
 Check the nvidia-smi command for the currently installed graphics driver.<br>
+If it does not work, just go to CUDA download.
 
 ```bash
 $ nvidia-smi
 ```
+
 ![nvidia-smi](https://user-images.githubusercontent.com/43063889/46713909-d7f1b180-cc93-11e8-8ffc-b675a83de3c3.png)
+If your graphics driver version is low or high, you may not be able to install CUDA.
+The CUDA installation file contains the minimum required graphics drivers.
+Therefore, it is safe to delete and install existing drivers.
+
+```bash
+$ sudo apt-get purge nvidia-*
+```
+
+If you install CUDA with a driver already installed, you can downgrade if your graphics driver is up to date.
+
+[CUDA DOWNLOAD LINK](https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=deblocal)
