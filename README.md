@@ -31,3 +31,24 @@ Starting with version 1.5, CUDA 9 and cuDNN 7 are required.<br>
 
 Also, the version of CUDA and cuDNN that can be installed for each graphics card may be different.<br>
 You should check your graphic card and check the version of TF that matches your graphics card.<br>
+
+---
+
+## Install CUDA 9.0<br>
+There is a minimum version of the graphics driver required when installing CUDA.<br>
+
+|   CUDA version   | Driver |
+|:---:|:---:|
+|CUDA 9.2|396.xx|
+|CUDA 9.1|387.xx|
+|CUDA 9.0|384.xx|
+|CUDA 8.0(GA2)|375.xx|
+|CUDA 8.0|367.4x|
+|CUDA 7.5|352.xx|
+|CUDA 7.0|346.xx|
+
+Check the nvidia-smi command for the currently installed graphics driver.
+
+'''bash
+$ nvidia-smi
+'''
