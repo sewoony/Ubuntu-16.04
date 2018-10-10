@@ -104,3 +104,25 @@ $ sudo dpkg -i cuda-repo-ubuntu1604-9-0-176-local-patch-4_1.0-1_amd64.deb
 $ sudo apt-get update 
 $ sudo apt-get upgrade cuda
 ```
+__Third, add your PATH setting to .bashrc__
+
+```bash
+$ sudo nano ~/.bashrc
+# enters a text editing program.
+$ export PATH=/usr/local/cuda-9.0/bin:$PATH
+# add this code
+```
+
+![path1](https://user-images.githubusercontent.com/43063889/46714548-f60ce100-cc96-11e8-93b5-e30caba9ff54.png)
+
+```bash
+$ source ~/.bashrc
+# Apply the revised contents.
+$ nvcc --version
+# check CUDA
+```
+
+![nvcc --version](https://user-images.githubusercontent.com/43063889/46714610-52700080-cc97-11e8-99df-b2c2a7fa24fc.png)
+
+
+$ nvcc --version
