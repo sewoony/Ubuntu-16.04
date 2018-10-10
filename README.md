@@ -8,17 +8,19 @@ After following these instructions you'll have:
 
 ---
 
-__Install Env__
+__Sewoony's Install Env__
 
 | OS | GPU | PYTHON |
 |:---:|:---:|:---:|
 | Ubuntu 16.04 | NVIDIA GIX 1080 | 3.5 |
 
-__CUDA & cuDNN__
+---
+
+__CUDA & cuDNN__<br>
 There are two different versions of Tensorflow : CPU / GPU<br>
 To use the Tensorflow-gpu version you need to install CUDA and cuDNN.<br>
-There is a different version to install for each TF version. <br>
-Starting with version 1.5, CUDA 9 and cuDNN 7 are required.
+There is a different version to install for each TF version.<br>
+Starting with version 1.5, CUDA 9 and cuDNN 7 are required.<br>
 
 | TF version | CUDA | cuDNN |
 |:---:|:---:|:---:|
@@ -27,5 +29,5 @@ Starting with version 1.5, CUDA 9 and cuDNN 7 are required.
 |TF 1.5|9|7|
 |TF 1.4|8|6|
 
-Also, the version of CUDA and cuDNN that can be installed for each graphics card may be different. <br>
-You should check your graphic card and check the version of TF that matches your graphics card.
+Also, the version of CUDA and cuDNN that can be installed for each graphics card may be different.<br>
+You should check your graphic card and check the version of TF that matches your graphics card.<br>
