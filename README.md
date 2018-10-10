@@ -52,3 +52,4 @@ Check the nvidia-smi command for the currently installed graphics driver.<br>
 ```bash
 $ nvidia-smi
 ```
+![nvidia-smi](https://user-images.githubusercontent.com/43063889/46713909-d7f1b180-cc93-11e8-8ffc-b675a83de3c3.png)
