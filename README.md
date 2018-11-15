@@ -133,7 +133,7 @@ $ nvcc --version
 ---
 
 
-## Install cuDNN 7.5.0<br>
+## Install cuDNN 7.0.5br>
 [cuDNN DOWNLOAD LINK](https://developer.nvidia.com/rdp/cudnn-archive)<br>
 click cuDNN DOWNLOAD LINK & sign up<br><br>
 
